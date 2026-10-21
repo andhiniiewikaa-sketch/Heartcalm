@@ -1,0 +1,140 @@
+:root{
+  --bg-1:#FFFDF8;  /* Section 1: Hero (paling atas) */
+  --bg-2:#F2C6CF;  /* Section 2: Bahan */
+  --bg-3:#F4DFE6;  /* Section 3: Manfaat */
+  --bg-4:#FFE8E7;  /* Section 4: Permasalahan */
+  --bg-5:#EAFFCF;  /* Section 5: Hasil penggunaan */
+  --bg-6:#E0FFA8;  /* Section 6: Testimoni */
+  --bg-7:#D1FF85;  /* Section 7: Footer */
+}
+
+:root{
+  --ink:#5B2A3C; --bg:#FFFFFF; --pink:#FF8FAB; --pink-d:#E5557D; --mint:#BDE8D5; --butter:#FFE8A3; --lilac:#DCCBFF;
+  --bs-body-font-family:'Quicksand',sans-serif; --bs-body-color:var(--ink); --bs-body-bg:var(--bg);
+  --border:3px solid var(--ink); --pop:3px 3px 0 var(--ink);
+}
+html{scroll-padding-top:80px}
+body{font-weight:500;line-height:1.7;overflow-x:hidden}
+h1,h2,h3,h4,h5{font-family:'Baloo 2',cursive;font-weight:800;line-height:1.1}
+h2{font-size:clamp(2rem,5vw,3rem)}
+.script{font-family:'Pacifico',cursive;font-weight:400;color:var(--pink-d)}
+.note{font-family:'Poppins',sans-serif;font-size:1.4rem;line-height:1.2}
+section{padding:4.5rem 0}
+:focus-visible{outline:3px dashed var(--pink-d);outline-offset:3px}
+
+/* Navbar */
+.navbar{background:var(--bg);border-bottom:var(--border)}
+.navbar img{height:36px}
+.nav-link{color:var(--ink);font-weight:700;border-radius:999px;padding:.3rem 1rem!important}
+.nav-link:hover{background:var(--butter)}
+.navbar-toggler{border:var(--border);border-radius:14px}
+
+/* Tombol */
+.btn-heart,.btn-outline-calm{font-family:'Baloo 2',cursive;font-weight:700;font-size:1.1rem;border:var(--border);border-radius:999px;padding:.5rem 1.7rem;box-shadow:4px 4px 0 var(--ink);transition:transform .15s,box-shadow .15s}
+.btn-heart{background:var(--pink);color:var(--ink)}
+.btn-outline-calm{background:#fff;color:var(--ink)}
+.btn-heart:hover,.btn-outline-calm:hover{transform:translate(2px,2px) rotate(-2deg);box-shadow:2px 2px 0 var(--ink);color:var(--ink);background:var(--butter)}
+
+/* Kartu gaya stiker */
+.sticker{background:#fff;border:var(--border);border-radius:28px;box-shadow:var(--pop);padding:1.5rem;height:100%}
+.tilt-l{transform:rotate(-1.5deg)}.tilt-r{transform:rotate(1.5deg)}
+
+/* Hero */
+.hero{padding-top:8rem;position:relative}
+.hero h1{font-size:clamp(2.8rem,8vw,5.2rem)}
+.pill{display:inline-block;background:var(--butter);border:var(--border);border-radius:999px;padding:.1rem 1rem;font-weight:700;margin:0 .4rem .6rem 0;transform:rotate(-2deg)}
+.pill:nth-child(2){background:var(--mint);transform:rotate(2deg)}
+.pill:nth-child(3){background:var(--lilac)}
+.hero-photo{display:block;width:100%;max-width:none;height:auto;margin-inline:auto;border-radius:28px}
+
+/* Bahan */
+.ingredient-card .big{font-family:'Baloo 2';font-weight:800;font-size:2.2rem;color:var(--pink-d)}
+.accordion-item{border:var(--border)!important;border-radius:20px!important;margin-bottom:.8rem;overflow:hidden;box-shadow:4px 4px 0 var(--ink)}
+.accordion-button{font-family:'Baloo 2';font-weight:700;font-size:1.15rem;color:var(--ink);background:#fff}
+.accordion-button:not(.collapsed){background:var(--butter);color:var(--ink);box-shadow:none}
+
+/* Manfaat */
+.benefit-icon{width:64px;height:64px;display:grid;place-items:center;font-size:1.9rem;border:var(--border);border-radius:50%;background:var(--lilac);margin-bottom:.8rem}
+
+/* Carousel */
+.problem-slide{background:#fff;border:var(--border);border-radius:32px;box-shadow:var(--pop);padding:2.5rem 1.5rem;text-align:center;max-width:520px;margin:0 auto 3rem}
+.problem-slide .emo{font-size:3.5rem;line-height:1}
+.problem .carousel-control-prev,.problem .carousel-control-next{width:8%;filter:invert(1)}
+.problem .carousel-indicators [data-bs-target]{background-color:var(--ink);height:10px;width:10px;border-radius:50%;border:0}
+
+/* Hasil */
+.stat{font-family:'Baloo 2';font-weight:800;font-size:clamp(3rem,8vw,4.5rem);color:var(--pink-d);line-height:1}
+
+/* Testimoni */
+.avatar{width:46px;height:46px;border:var(--border);border-radius:50%;background:var(--mint);display:grid;place-items:center;font-family:'Baloo 2';font-weight:800}
+
+/* Footer */
+footer{background:var(--ink);color:#ffe3ea;padding:4rem 0 2rem;border-radius:40px 40px 0 0}
+footer a{color:#fff}footer img{height:36px;filter:brightness(0) invert(1)}
+.form-control{border:var(--border);border-radius:999px 0 0 999px}
+
+@media (max-width:767.98px){section{padding:3.2rem 0}.hero{padding-top:6.5rem}.tilt-l,.tilt-r{transform:none}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+
+/* ===== Tambahan versi gabungan ===== */
+.ba img{width:100%;border:var(--border);border-radius:24px;box-shadow:var(--pop)}
+.skin-type{font-family:'Quicksand',sans-serif;font-size:.85rem;font-weight:600;opacity:.8}
+.promo{background:var(--butter);border:var(--border);border-radius:18px;padding:.8rem 1rem;color:var(--ink);font-weight:700}
+
+/* ===== Efek hover: elemen "maju" saat kursor diarahkan ===== */
+.hover-pop{transition:transform .2s ease,box-shadow .2s ease,background-color .2s}
+@media (hover:hover){
+  .sticker.hover-pop:hover,.problem-slide.hover-pop:hover{transform:translate(-5px,-8px) scale(1.02);box-shadow:10px 12px 0 var(--ink)}
+  .tilt-l.hover-pop:hover{transform:rotate(0deg) translate(-5px,-8px) scale(1.02)}
+  .tilt-r.hover-pop:hover{transform:rotate(0deg) translate(-5px,-8px) scale(1.02)}
+  .pill.hover-pop:hover{transform:translateY(-5px) rotate(0deg) scale(1.06);background:var(--pink)}
+}
+.problem-photo{width:100%;height:170px;object-fit:cover;border:var(--border);border-radius:20px}
+.testi-card{display:flex;flex-direction:column}
+.testi-photo{width:100%;aspect-ratio:4/3;object-fit:cover;border:var(--border);border-radius:20px;margin-bottom:1rem}
+.testi-name{font-family:'Baloo 2',cursive;font-size:1.3rem;line-height:1.1}
+
+/* ===== Bintang rating ===== */
+.stars{display:flex;gap:.2rem;color:#FFB800;font-size:1.25rem;margin-top:auto;padding-top:1rem}
+
+/* ===== Background tiap section (warna diatur lewat --bg-1 s/d --bg-7 di baris paling atas file) ===== */
+#beranda{background:var(--bg-1)}
+#bahan{background:var(--bg-2)}
+#manfaat{background:var(--bg-3)}
+#permasalahan{background:var(--bg-4)}
+#hasil{background:var(--bg-5)}
+#testimoni{background:var(--bg-6)}
+footer{background:var(--bg-7);color:var(--ink);border-radius:0}
+footer a,footer .text-white{color:var(--ink)!important}
+footer img{filter:none}
+footer hr{border-color:var(--ink);opacity:.25}
+
+/* Pink tua untuk teks aksen supaya tetap kontras di berbagai warna background */
+.stat,#hasil .script,#testimoni .script{color:#B8325C}
+
+/* Judul di sisi kiri ikut menempel saat di-scroll (layar lebar) */
+@media (min-width:992px){.side-title{position:sticky;top:100px}}
+
+/* ===== Slider testimoni: 3 kartu per halaman + panah ===== */
+/* ruang ekstra supaya bayangan & efek angkat kartu tidak terpotong carousel */
+.testi-slide{padding:1.2rem 1rem 1.8rem}
+/* kemiringan awal: kiri, lurus, kanan (per kolom di dalam satu halaman) */
+.testi-slide .row>*:nth-child(1) .testi-card{transform:rotate(-1.5deg)}
+.testi-slide .row>*:nth-child(3) .testi-card{transform:rotate(1.5deg)}
+.testi-card{transition:transform .25s ease,box-shadow .25s ease,filter .25s ease,opacity .25s ease}
+
+/* Efek fokus: kartu yang disorot berwarna, lurus & terangkat; kartu lain jadi abu-abu pudar */
+@media (hover:hover){
+  .testi-slide .row:hover .testi-card{filter:grayscale(1);opacity:.55}
+  .testi-slide .row .testi-card:hover{filter:none;opacity:1;transform:translateY(-12px) rotate(0deg) scale(1.03);box-shadow:10px 14px 0 var(--ink);position:relative;z-index:2}
+}
+
+/* Tombol panah */
+.testi-nav{display:flex;align-items:center;justify-content:center;gap:1.2rem;margin-top:.5rem}
+.testi-arrow{width:52px;height:52px;display:grid;place-items:center;font-size:1.4rem;color:var(--ink);background:var(--pink);border:var(--border);border-radius:50%;box-shadow:4px 4px 0 var(--ink);transition:transform .15s,box-shadow .15s,background-color .15s}
+.testi-arrow:hover{transform:translate(2px,2px);box-shadow:2px 2px 0 var(--ink);background:var(--butter)}
+.testi-page{font-family:'Baloo 2',cursive;font-weight:700;font-size:1.2rem;min-width:3.5rem;text-align:center}
+
+@media (max-width:767.98px){
+  .testi-slide .row>*:nth-child(1) .testi-card,.testi-slide .row>*:nth-child(3) .testi-card{transform:none}
+}
